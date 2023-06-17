@@ -7,7 +7,7 @@ const modalParagraph = document.querySelector(".modal p");
 function toggleModal(event) {
   event.preventDefault();
   modal.classList.toggle("ativo");
-  modalParagraph.innerText = `A confirmation email has been sent to ${emailInput.value}. Please open it and click the button inside to confirm your subscription.`;
+  modalParagraph.innerHTML = `A confirmation email has been sent to <b>${emailInput.value}</b>. Please open it and click the button inside to confirm your subscription.`;
   emailInput.value = "";
 }
 
